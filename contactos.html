@@ -6,6 +6,8 @@
     <title>Contactos</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js"></script>
+    <script src="js/textarea_cont.js"></script>
+    <script src="js/validar_fecha.js"></script>
 </head>
 <body>
     <header role="banner" class="animated-header">
@@ -46,14 +48,16 @@
             </p>
             <p>
                 <label for="fecha-hora">Selecciona fecha y hora de la cita:</label>
-                <input type="datetime-local" id="fecha-hora" name="fecha_hora" required/>
+                <input type="datetime-local" id="fecha-hora" name="fecha_hora" required min="2026-09-12T09:00/>
             </p>
+                <div class="textarea-wrapper"></div>
+                <label for="comentario">Comentario: </label>
+                <textarea id="comentario" name="comentario" rows="4" maxlength="300" placeholder="Escriba su motivo aquí..."></textarea>
+                <div id="counter-info" class="counter-info">
+                <span id="char-count">0</span> / <span>300</span>
+                </div>
             <p>
-                <label for="motivo">Motivo de Contacto:</label>
-                <textarea id="motivo" rows="4" placeholder="Escriba su motivo aquí..." required aria-required="true"></textarea>
-
-            </p>
-            <p>
+                
                 <label for="mensaje">Mensaje:</label>
                 <input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí..." required >
                 
