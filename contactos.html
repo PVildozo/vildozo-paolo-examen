@@ -30,7 +30,7 @@
     <main id="main-content" role="main">
         <section id="contactos" aria-labelledby="contacto-heading">
         <h2 id="contacto-heading">Contactos</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" class="contact-form" aria-label="Formulario de contacto">
             <p>
                 <label for="nombre"> Nombre Completo:</label>
                 <input id="nombre" type="text" placeholder="Pepe Perez Peres" required aria-required="true" pattern="^[a-zA-Z]{40}$">
@@ -45,17 +45,13 @@
             </p>
             <p>
                 <label for="motivo">Motivo de Contacto:</label>
-                <input type="text" id="motivo" placeholder="Escriba aqui" required aria-required="true">
+                <textarea id="motivo" rows="4" placeholder="Escriba su motivo aquí..." required aria-required="true"></textarea>
 
             </p>
             <p>
                 <label for="mensaje">Mensaje:</label>
-                <input type="text" id="mensaje">
+                <input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí..." required >
                 
-            </p>
-            <p>
-                <input type="checkbox" id="terminos" name="acepto" value="si" checked>
-                <label for="terminos">Acepto los términos y condiciones</label>
             </p>
             <p>
                 <button type="submit"> Enviar</button>
