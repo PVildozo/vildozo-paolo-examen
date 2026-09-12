@@ -1,24 +1,24 @@
-const textarea = document.getElementById('comentario');
-const charCount = document.getElementById('char-count');
-const counterInfo = document.getElementById('counter-info');
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('comentario'); // Debe coincidir con el id="motivo" del HTML
+  const charCount = document.getElementById('char-count');
+  const counterInfo = document.getElementById('counter-info');
 
-// Obtiene el límite máximo desde el atributo maxlength del HTML
-const maxChars = parseInt(textarea.getAttribute('maxlength'), 10);
-const warningThreshold = Math.floor(maxChars * 0.9); // 90% de capacidad (270 caracteres)
+  if (!textarea || !charCount) return;
 
-textarea.addEventListener('input', () => {
-  const currentLength = textarea.value.length;
-  
-  // Actualiza el número visible
-  charCount.textContent = currentLength;
+  const maxChars = parseInt(textarea.getAttribute('maxlength'), 10) || 300;
+  const warningThreshold = Math.floor(maxChars * 0.9);
 
-  // Remueve clases de alerta previas
-  counterInfo.classList.remove('warning', 'limit-reached');
+  // Escucha el evento 'input' para contar en tiempo real (teclado, pegado de texto, etc.)
+  textarea.addEventListener('input', () => {
+    const currentLength = textarea.value.length;
+    charCount.textContent = currentLength;
 
-  // Aplica colores de advertencia según la proximidad al límite
-  if (currentLength >= maxChars) {
-    counterInfo.classList.add('limit-reached');
-  } else if (currentLength >= warningThreshold) {
-    counterInfo.classList.add('warning');
-  }
+    counterInfo.classList.remove('warning', 'limit-reached');
+
+    if (currentLength >= maxChars) {
+      counterInfo.classList.add('limit-reached');
+    } else if (currentLength >= warningThreshold) {
+      counterInfo.classList.add('warning');
+    }
+  });
 });

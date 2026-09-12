@@ -36,7 +36,7 @@
         <form action="#" method="post" class="contact-form" aria-label="Formulario de contacto">
             <p>
                 <label for="nombre"> Nombre Completo:</label>
-                <input id="nombre" type="text" placeholder="Pepe Perez Peres" required aria-required="true" pattern="^[a-zA-Z]{40}$">
+                <input id="nombre" type="text" placeholder="Pepe Perez Peres" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" title="Ingresa solo letras y espacios">
             </p>
             <p>
                 <label for="correo">Correo electronico: </label>
@@ -48,20 +48,22 @@
             </p>
             <p>
                 <label for="fecha-hora">Selecciona fecha y hora de la cita:</label>
-                <input type="datetime-local" id="fecha-hora" name="fecha_hora" required min="2026-09-12T09:00/>
+                <input type="datetime-local" id="fecha-hora" name="fecha_hora" required min="2026-09-12T09:00"/>
             </p>
-                <div class="textarea-wrapper"></div>
-                <label for="comentario">Comentario: </label>
-                <textarea id="comentario" name="comentario" rows="4" maxlength="300" placeholder="Escriba su motivo aquí..."></textarea>
-                <div id="counter-info" class="counter-info">
-                <span id="char-count">0</span> / <span>300</span>
-                </div>
             <p>
                 
                 <label for="mensaje">Mensaje:</label>
                 <input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí..." required >
                 
             </p>
+                <div class="textarea-wrapper"></div>
+                <label for="comentario">Motivo: </label>
+                <textarea id="comentario" name="comentario" rows="4" maxlength="300" placeholder="Escriba su motivo aquí..."></textarea>
+                <div id="counter-info" class="counter-info">
+                <span id="char-count">0</span> / <span>300</span>
+                </div>
+                
+            
             <p>
                 <button type="submit"> Enviar</button>
                 <button type="reset"> Limpiar</button>

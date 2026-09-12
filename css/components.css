@@ -248,7 +248,7 @@ input[type="datetime-local"] {
     color: var(--text-main);
     font-family: var(--font-body);
     font-size: 0.95rem;
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+    transition: all var(--transition-fast);
 }
 
 input:focus,
@@ -256,7 +256,7 @@ textarea:focus {
     outline: none;
     border-color: var(--color-link-red);
     box-shadow: 0 0 12px rgba(230, 57, 86, 0.35);
-    background: var(--bg-card);
+    background: var(--bg-surface);
 }
 
 /* Áreas de texto y contadores */
