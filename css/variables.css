@@ -1,0 +1,74 @@
+:root {
+/* =========================
+    = PALETA: AUTO CLÁSICO =
+     ======================= */
+
+  /* Fondos(Guinda/Vino metalizado oscuro) */
+  --bg-body: #16080b;           /* Vino Oscuro Profundo */
+  --bg-surface: #260e14;        /* Guinda Metalizado */
+
+  /* Textos base basados en la tapicería interna y cuero crema */
+  --text-main: #f8f4ef;         /* Blanco Cuero Crema */
+  --text-muted: #beaea3;        /* Beige Suave para subtítulos y fechas */
+
+  /* Encabezados e iluminaciones */
+  --color-gold-old: #dcb36c;    /* Cromo Dorado */
+  --color-gold-warm: #f2cb85;   /* Luz Cálida  */
+  --color-marfil: #ebdccb;      /* Marfil Seda para nombres de proyectos e instituciones */
+
+  /* Enlaces y botones inspirados y el tono carmesí */
+  --color-link-red: #e63956;    /* Rojo Carmesí Brillante */
+
+  /* Elementos Decorativos y Bordes */
+  --color-divider: #8c1b30;     /* Rojo Vino Intenso para líneas divisorias (<hr>) */
+  --color-border: #441a23;      /* Burdeos Metalizado Oscuro para bordes de tarjetas */
+    --shadow-sm: 0 4px 15px rgba(0,0,0,0.5)
+  /* Destacados y Componentes (<mark>, <meter>) */
+  --bg-mark: #8c1b30;           /* Fondo Rojo Vino para etiquetas destacadas */
+  --text-mark: #f8f4ef;         /* Texto claro sobre marcas */
+  --meter-fill: #e63956;        /* Rojo Carmesí para las barras de progreso */
+  --meter-bg: #32131b;          /* Fondo Guinda Oscuro para la base del meter */
+
+  /* Formulario y Botones */
+  --btn-primary-bg: #8c1b30;    /* Rojo Vino */
+  --btn-primary-text: #f8f4ef;  /* Texto crema para los botones */
+  --input-bg: #260e14;          /* Fondo del campo de texto integrado a la superficie */
+
+  /* Barra de navegación / Scrollbar */
+  --scrollbar-track: #16080b;   /* Mismo tono que el fondo de la carrocería */
+  --scrollbar-thumb: #8c1b30;   /* Rojo vino para la barra */
+  --scrollbar-thumb-hover: #dcb36c; /* Cromo dorado al pasar el cursor */
+
+  /* Información de Contacto (<address>) */
+    --address-text: #beaea3;
+    --address-bg: #260e14;
+    --address-border: #e63956;    /* Borde lateral brillante*/
+    --address-link: #dcb36c;
+    --address-link-hover: #f8f4ef;
+
+  /* --- TIPOGRAFÍA Y ESPACIADOS --- */
+    --font-title: 'Playfair Display', 'Bodoni MT', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-code: 'Fira Code', 'JetBrains Mono', monospace;
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2.5rem;
+    --space-2xl: 4rem;
+
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 18px;
+    --radius-full: 9999px;
+
+    --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* EFECTOS CSS3 Y REFLEJOS METÁLICOS */
+    --glass-backdrop: blur(14px) saturate(140%);
+    --glass-bg: rgba(38, 14, 20, 0.85);           /* Capa translúcida tono guinda metalizado */
+    --glass-border: rgba(220, 179, 108, 0.2);     /* Borde fino en cromo dorado */
+}
