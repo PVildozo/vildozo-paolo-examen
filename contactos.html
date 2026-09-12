@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header role="banner" class="animated-header">
@@ -42,6 +43,10 @@
             <p>
                 <label for="telefono"> Telefono: </label>
                 <input type="text" id="telefono" placeholder="+591 78956427" pattern="\+591 [0-9]{8}" required aria-required="true">
+            </p>
+            <p>
+                <label for="fecha-hora">Selecciona fecha y hora de la cita:</label>
+                <input type="datetime-local" id="fecha-hora" name="fecha_hora" required/>
             </p>
             <p>
                 <label for="motivo">Motivo de Contacto:</label>
